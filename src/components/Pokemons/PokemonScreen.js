@@ -1,4 +1,4 @@
-import { useFocusEffect } from '@react-navigation/core';
+import { useFocusEffect } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import AppButton from '../../common/shared/AppButton';
@@ -22,6 +22,7 @@ const PokemonScreen = (props) => {
       : likeUnlikeText.like;
 
     setButtonText(newButtonText);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.favouritePokemons]);
 
   useFocusEffect(() => {
