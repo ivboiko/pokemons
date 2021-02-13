@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { pokemonsAPI } from '../../../api/pokemons';
+import { pokemonsAPI } from '../../api/pokemons';
 
 export const useFetchPokemons = () => {
   const [response, setResponse] = useState(null);
