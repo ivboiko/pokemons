@@ -1,10 +1,10 @@
 import { useFocusEffect } from '@react-navigation/native';
+import { HeaderBackButton } from '@react-navigation/stack';
 import React, { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import AppButton from '../../common/shared/AppButton';
 import PokemonImage from '../../common/shared/PokemonImage';
-import { colors } from '../../style/style';
-import { HeaderBackButton } from '@react-navigation/stack';
+import { colors, fonts } from '../../style/style';
 
 const likeUnlikeText = {
   like: 'like',
@@ -80,19 +80,19 @@ const styles = StyleSheet.create({
   },
   name: {
     marginTop: 15,
-    fontFamily: 'Montserrat-Bold',
-    fontSize: 35,
+    fontFamily: fonts.boldText,
+    fontSize: 33,
     textAlign: 'center',
   },
   description: {
     marginTop: 25,
-    fontFamily: 'Montserrat-SemiBold',
+    fontFamily: fonts.semiBoldText,
     fontSize: 18,
     marginHorizontal: 15,
   },
   pokemonParams: {
     marginVertical: 20,
-    fontFamily: 'Montserrat-Regular',
+    fontFamily: fonts.regularText,
     fontSize: 18,
     marginHorizontal: 15,
   },

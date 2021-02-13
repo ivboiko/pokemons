@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
-import { colors } from '../../style/style';
+import { Dimensions, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { colors, fonts } from '../../style/style';
 
 const AppButton = ({ buttonText, onPress }) => (
   <TouchableOpacity
@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
   },
   appButtonText: {
     fontSize: 18,
+    fontFamily: fonts.semiBoldText,
     color: colors.buttonTextColor,
     alignSelf: 'center',
     textTransform: 'uppercase',
